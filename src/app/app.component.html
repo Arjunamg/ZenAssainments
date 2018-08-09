@@ -1,0 +1,15 @@
+
+
+
+<div>
+  <img src="images/banner.png">
+</div>
+<div>
+<a  *ngFor="let item of MenuItems" href="#" [routerLink]="item.path">{{item.text}}</a><br><br><br>
+<a  *ngFor="let item of MenuItems1" href="#" [routerLink]="item">{{item}}</a>
+</div>
+
+
+
+<router-outlet></router-outlet>
+

@@ -1,0 +1,12 @@
+a{
+    text-decoration: none;
+    padding: 5px;
+    border: 3px solid salmon;
+    margin: 10px
+
+}
+
+router-outlet{
+	font-size: 30px;
+}
+
