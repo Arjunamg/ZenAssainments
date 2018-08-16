@@ -1,0 +1,32 @@
+
+
+<div>
+  <form [formGroup]='rform' (ngSubmit)='save(rform)'>
+   
+    <input type="text" fromControlName='name' >
+  <br><br>
+    <input type="number" fromControlName='age'><br><br>
+    <!-- <label for="">Email : </label>
+    <input type="email" fromControlName='email'><br><br>
+    <label for="">Qualification : </label>
+    <select fromControlName='qualification'>
+      <option value="" *ngFor='let quli of qualification'>{{quli}}</option>
+    </select><br><br>
+    <label for="" >Hobbies : </label>
+    <span *ngFor='let hobby of hobbies'>
+    <input type="checkbox" fromControlName='hobbies' >{{hobby}}.&nbsp;&nbsp;&nbsp;
+  </span><br><br>
+    <label for="">Location : </label>
+    <select fromControlName='location'>
+        <option value="" *ngFor='let location of locations'>{{location}}</option>
+      </select><br><br>
+    <label for="">Description : </label>
+    <textarea fromControlName='description'></textarea><br><br> -->
+    <button [disabled]='rform.invalid'>Submit</button>
+
+  </form>
+</div>
+
+<div>
+  {{form | json}}
+</div>
